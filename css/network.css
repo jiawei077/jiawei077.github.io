@@ -87,6 +87,7 @@
 .download_button:hover {
   background: #424b5a;
   color: var(--bs-body-bg);
+  border: solid 2px #424b5a;
 }
 .download_button:hover svg path {
   fill: var(--bs-body-bg);

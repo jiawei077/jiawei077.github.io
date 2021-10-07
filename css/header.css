@@ -73,7 +73,6 @@
 .navi.flexbox {
   flex-flow: column;
   align-items: flex-end;
-  /* float: right; */
 }
 
 .navi ul li,
@@ -86,48 +85,15 @@
   display: none;
 }
 
-.navbar-toggler {
-  position: relative;
-  outline: 0;
-  border: none;
-}
-.navbar-toggler:focus {
-  border: none;
-  box-shadow: none;
-}
-
-.navbar-toggler span {
-  position: relative;
-}
-.navbar-toggler-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.navbar-toggler span:before {
-  content: "";
-  position: absolute;
-  display: block;
-  z-index: 2;
-  width: 20px;
-  height: 20px;
-  top: 0;
-  left: 0;
-  /* background: url(https://static.remove.bg/remove-bg-web/bc40b822e064ca145e7bee57e394c7bba2280416/assets/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png) */
-  /* bottom center no-repeat; */
-  background: url("../assets/menu.png");
-  background-size: cover;
-}
-
 .navi ul li a {
   margin-right: 10px;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   color: #252932;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navi ul li a:hover {
@@ -152,6 +118,13 @@
 .nav_link.green {
   background: #a5bb29;
 }
+.nav_link.green:hover {
+  color: var(--bs-body-bg);
+}
+
+.navi ul li a.nav_link.green:hover svg path {
+  fill: var(--bs-body-bg);
+}
 
 .nav_icon {
   margin-right: 10px;
@@ -159,6 +132,14 @@
 .mobile_navi.flexbox {
   display: none;
   width: auto;
+}
+
+.mobile_navi a.nav-link:hover .nav_icon svg path {
+  fill: var(--bs-red);
+}
+
+.burger_menu:hover svg rect {
+  fill: var(--bs-red);
 }
 
 @media (max-width: 991px) {
